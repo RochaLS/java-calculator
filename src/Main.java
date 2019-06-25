@@ -21,9 +21,9 @@ public class Main {
 
         // Preventing the code to run if the user tries to make a division by zero, and checking if the operator is valid
         if (operator.equals("/") && secondNumber == 0 ) {
-            System.out.println("Sorry but it's impossible to divide numbers by 0!");
+            System.out.println("Not possible to divide by 0!");
         }
-        else if (!operator.equals("+") && !operator.equals("-") && !operator.equals("/") && !operator.equals("*")) {
+        else if (!operator.equals("+") && !operator.equals("-") && !operator.equals("/") && !operator.equals("x")) {
             System.out.println("Invalid operator!");
         }
 
@@ -60,7 +60,7 @@ public class Main {
             result = firstNum / secondNum;
 
         }
-        else if (operator.equals("*")) {
+        else if (operator.equals("x")) {
             result = firstNum * secondNum;
         }
 
